@@ -1,0 +1,139 @@
+﻿<header class="tc-header">
+    <div class="header-container">
+        <!--Logo-->
+        <div class="header-logo">
+            <img src="~/Images/logothaicong.png" />
+        </div>
+
+        <!-- Menu -->
+        <nav class="header-menu">
+            <a href="/Home/Index">Home</a>
+            <a href="/Home/About">About</a>
+            <a href="/Home/Contact">Contact</a>
+            <a href="/Car/ThuongHieu">Thuong Hieu</a>
+        </nav>
+
+        <!-- Buttons -->
+        <div class="header-buttons">
+            <a href="/Account/Login" class="bubble-btn">Đăng nhập</a>
+            <a href="/Account/Register" class="bubble-btn white">Đăng ký</a>
+
+            <!--Social icons-->
+            <div class="header-social">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="bi bi-music-note-beamed"></i>
+                </a>
+            </div>
+
+            <a href="/Home/DatLich" class="bubble-btn white">Đặt Lịch</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<style>
+    /* ===== HEADER CHUNG ===== */
+    .tc-header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 18px 0;
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .header-container {
+        max-width: 1400px;
+        margin: auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ===== LOGO ===== */
+    .header-logo img {
+        height: 65px;
+        margin-left: -30px;
+    }
+
+    /* ===== MENU ===== */
+    .header-menu {
+        display: flex;
+        gap: 50px;
+    }
+
+        .header-menu a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+            .header-menu a:hover {
+                color: #00c8ff;
+            }
+
+    /* ===== BUTTON BONG BÓNG ===== */
+    .header-buttons {
+        display: flex;
+        gap: 22px;
+    }
+
+    .bubble-btn {
+        padding: 10px 28px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+        transition: 0.3s;
+    }
+
+        /* Bản trắng giống hình bạn gửi */
+        .bubble-btn.white {
+            background: #fff;
+            color: black;
+            border-color: #fff;
+        }
+
+        .bubble-btn:hover {
+            transform: scale(1.05);
+            backdrop-filter: blur(5px);
+        }
+
+    
+    /* SOCIAL ICONS */
+    .header-social {
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .header-social a {
+        color: white;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+
+        .header-social a:hover {
+            color: #00c8ff;
+            transform: scale(1.2);
+        }
+
+
+</style>
+
